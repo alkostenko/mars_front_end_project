@@ -1,0 +1,47 @@
+@use '../util' as *;
+
+table{
+    color:$accent;
+    border:none;
+
+    tr:nth-child(2n+1){
+        background: $details;
+        color:$text;
+    }
+
+    td{
+        padding:rem(5) rem(15);
+    }
+
+    &:not(:last-child){
+        margin-bottom: 7%;
+    }
+    &:last-child{
+        
+        tr:nth-child(2n){
+            background: $details;
+            color:$text;
+        }
+        tr:nth-child(2n+1){
+            background: $bg;
+            color:$text;
+        }
+    }
+}
+
+.value{
+    color:$text;
+    font-family: $Barlow;
+    font-weight: 500;
+    line-height: rem(29);
+
+}
+
+.rover_content{
+    p{
+        margin-bottom: rem(25);
+        &.last{
+            margin-bottom: rem(50);
+        }
+    }
+}

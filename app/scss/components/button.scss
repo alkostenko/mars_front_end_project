@@ -1,0 +1,70 @@
+@use '../util' as *;
+
+
+.div-button{
+    margin-top: rem(45)
+}
+
+
+
+.button{
+    &-large{
+        transition: all 0.3s ease-in-out;
+        font-family: $Bungee;
+        font-size: rem(22);
+        color:$bg;
+        padding:rem(0) rem(80);
+        background-color: $accent;;
+        &:hover{
+            opacity: 70%;
+        }
+        @include breakpoint-down(medium){
+            font-size: rem(18);
+            padding:rem(5) rem(45);
+        }
+        @include breakpoint-down(small){
+            font-size: rem(14);
+            padding:rem(5) rem(45);
+        }
+    }
+    &-unfilled{
+        
+
+        &-red{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: rem(15);
+            p{
+                font-weight: 600;
+                margin-right: rem(15);
+                color:$details;
+                @include breakpoint-down(medium){
+                    white-space: nowrap;
+                }
+            }
+            svg{
+                path{
+                    stroke: $details;
+                }
+            }
+        }
+        &-white{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: rem(20);
+            p{
+                margin: 0;
+                font-weight: 600;
+                margin-right: rem(15);
+                color:$text;
+                @include breakpoint-down(medium){
+                    white-space: nowrap;
+                }
+            }
+        }
+
+    }
+
+}

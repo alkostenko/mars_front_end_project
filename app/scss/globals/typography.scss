@@ -1,0 +1,96 @@
+@use '../util' as *;
+
+h1, h2, h3{
+    font-family: $Bungee;
+    color:$text;
+    margin: 0;
+    pointer-events: none;
+}
+
+h1{
+    font-size: rem(64);
+    line-height: rem(77);
+    margin-bottom: rem(15);
+    span{
+        color:$accent;
+    }
+    @include breakpoint-down(medium){
+        font-size: rem(45);
+        margin-bottom: rem(9);
+        line-height: rem(54);
+    }
+    @include breakpoint-down(small){
+        font-size: rem(35);
+        margin-bottom: rem(9);
+        line-height: rem(42);
+    }
+}
+
+h2{
+    font-size: rem(40);
+    line-height: rem(48);
+    margin-bottom: rem(50);
+    
+    &.text{
+        margin: 0;
+        margin-bottom: rem(15);
+        @include breakpoint-down(medium){
+            margin-bottom: rem(15);
+        }
+        @include breakpoint-down(small){
+            margin-bottom: rem(15);
+        }
+    }
+    @include breakpoint-down(medium){
+        font-size: rem(30);
+        margin-bottom: rem(25);
+        line-height: rem(36);
+    }
+    @include breakpoint-down(small){
+        font-size: rem(22);
+        margin-bottom: rem(25);
+        line-height: rem(26);
+    }
+    
+}
+
+h3{
+    font-size: rem(30);
+    line-height: rem(36);
+    margin-bottom: rem(15);
+    color: $details;
+    @include breakpoint-down(medium){
+        font-size: rem(22);
+        margin-bottom: rem(15);
+        line-height: rem(24);
+    }
+    @include breakpoint-down(small){
+        font-size: rem(20);
+        margin-bottom: rem(15);
+        line-height: rem(22);
+    }
+}
+
+p{
+    font-family: $Barlow;
+    font-size: rem(18);
+    font-weight: 400;
+    color:$text;
+    line-height: rem(29);
+    margin: 0;
+    pointer-events: none;
+    @include breakpoint-down(medium){
+        font-size: rem(16);
+        line-height: rem(24);
+    }
+    @include breakpoint-down(small){
+        font-size: rem(14);
+        line-height: rem(21);
+    }
+    
+
+}
+
+a, a:visited, a:active{
+    text-decoration: none;
+}

@@ -1,0 +1,16 @@
+@use '../util' as *;
+
+ul{
+    color:$text;
+    font-family: $Barlow;
+    line-height: rem(29);
+
+}
+
+p.no-m-b{
+    margin-bottom: rem(5);
+}
+
+p.last{
+    margin-bottom: rem(50);
+}

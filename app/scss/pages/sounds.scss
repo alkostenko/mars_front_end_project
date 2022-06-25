@@ -1,0 +1,123 @@
+@use '../util' as *;
+
+.content{
+    margin-top: rem(50);
+    @include breakpoint-down(medium){
+        margin-top: rem(25);
+    }
+    .tab-content{
+        display: none;
+        &.checked{
+            display: block;
+        }
+    }
+}
+
+
+.videos{
+    display: flex;
+    height: auto;
+    position: relative;
+    video{
+        width:50%;
+        @include breakpoint-down(small){
+            width: 100%;
+        }
+    }
+    @include breakpoint-down(small){
+        flex-direction: column;
+    }
+}
+
+.tabs{
+    
+    display: flex;
+    justify-content: center;
+    ul{
+        list-style: none;
+        display: flex;
+        color:$text;
+        font-family: $Barlow;
+        font-size: rem(18);
+                line-height: rem(29);
+        li{
+            cursor: pointer;
+            &:not(:last-child){
+                margin-right: rem(30);
+            }
+            &.checked{
+                color:$accent;
+                font-weight: 700;
+            }
+            @include breakpoint-down(medium){
+                font-size: rem(16);
+                line-height: rem(24);
+                white-space: nowrap;
+            }
+            @include breakpoint-down(small){
+                font-size: rem(14);
+                line-height: rem(21);
+            }
+        }
+        @include breakpoint-down(medium){
+            width:100%;
+            overflow-x: scroll;
+            padding: 0;
+            &::-webkit-scrollbar{
+                display:none;
+            }
+            
+        }
+    }
+    @include breakpoint-down(medium){
+        width:100%;
+        overflow-x: hidden;
+        scrollbar-width: none;
+    }
+}
+
+
+.science{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        text-align: center;
+        margin-bottom: rem(50);
+        @include breakpoint-up(large){
+            max-width: 60%;
+        }
+    }
+    p{
+        @include breakpoint-up(large){
+            max-width: 60%;
+        }
+        &:not(:last-child){
+            margin-bottom: rem(15);
+        }
+    }
+}
+
+.overlays{
+    pointer-events: none;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    .overlay{
+        padding-left: rem(15);
+        width: 50%;
+        background-color: rgba(14,14,14,0.7);
+        backdrop-filter: blur(4);
+        @include breakpoint-down(small){
+            display:grid;
+            width: 100%;
+            height: rem(22);
+        }
+    }
+    @include breakpoint-down(small){
+        display:grid;
+        height: 100%;
+    }
+}

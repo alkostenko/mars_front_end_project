@@ -1,0 +1,47 @@
+@use '../util' as *;
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap:rem(15);
+    @include breakpoint-down(medium){
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include breakpoint-down(medium){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-card{
+        height: rem(315);
+        width:100%;
+        position: relative;
+
+        img{
+            width: 100%;
+            height: rem(315);
+            object-fit:cover;
+        }
+
+        .gallery-card-overlay{
+            width:100%;
+            background: rgba($bg, 0.7);
+            backdrop-filter: blur(rem(4));
+            position: absolute;
+            bottom:0;
+            padding: 0 rem(15);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        svg{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            display: grid;
+            place-items: center;
+        }
+    }
+    
+}

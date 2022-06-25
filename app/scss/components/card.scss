@@ -1,0 +1,132 @@
+@use '../util' as *;
+
+
+.card{
+    &-wrap-photo-bg{
+        &:hover{
+            .card-photo-bg{
+                transform: scale(1.15);
+                transition: all 0.3s ease-in-out;
+                @include breakpoint-up(large){
+                    padding-left: 10%;
+                }
+
+            }
+            .card-side-to-side{
+                transform: scale(1.15);
+                transition: all 0.3s ease-in-out;
+                @include breakpoint-up(xlarge){
+                    padding-left: 10%;
+                }
+            }
+           
+        }
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    &-photo-bg{
+        width:100%;
+        height: rem(315);
+        padding:0;
+        padding-left:rem(50);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        transition: all 0.3s ease-in-out;
+        h3{
+            color:$text;
+        }
+        p{
+            max-width: 50%;
+            @include breakpoint-down(medium){
+                max-width: 80%;
+            }
+            @include breakpoint-down(small){
+                max-width: 100%;
+            }
+        }
+        @include breakpoint-down(medium){
+            text-align: center;
+            align-items: center;
+            padding:rem(80) rem(20);
+        }
+    }
+    &-text{
+        &:hover{
+            transform: translateX(10%);
+        }
+        transition: all 0.3s ease-in-out;
+        width:100%;
+        height: rem(315);
+        padding:0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        @include breakpoint-down(medium){
+            margin-bottom: 0;
+            height: rem(250);
+        }
+        div{
+            max-width: 45%;
+        }
+        .image-wrap{
+            height: 100%;
+            width: 45%;
+            z-index:-1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            &.no-bg{
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            background-position: center;
+
+        }
+    }
+    &-side-to-side{
+        transition: all 0.3s ease-in-out;
+
+        height: rem(400);
+        padding: 0 7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        // width:50%;
+
+        p{
+            @include breakpoint-up(medium){
+                width:60%;
+            }
+            @include breakpoint-up(large){
+                width:100%;
+            }
+        }
+        @include breakpoint-down(medium){
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            padding:rem(60) rem(20);
+        }
+    }
+}
+
+.blur{
+    max-width: rem(500);
+    padding:rem(40) rem(60);
+    background-color: rgba($bg, $alpha: 0.7);
+    backdrop-filter: blur(rem(4));
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .p-text{
+        max-width: rem(380);
+        text-align: center;
+    }
+    transition: all 0.3s ease-in-out;
+}

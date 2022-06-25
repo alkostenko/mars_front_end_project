@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Bungee&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/home_filled.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="/dist/style.css">
+    <script defer src="/dist/script.js"></script>
+    <script defer src="/app/js/gallery.js"></script>
+
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="/img/logo_nav.svg" alt="" class="logo"></a>
+        <div class="nav">
+            <ul>
+                <li><a href="/index.html"><img src="/img/home_outline.svg" alt=""></a></li>
+                <li><a href="missions.html">Missions</a></li>
+                <li><a href="moons.html">Moons</a></li>
+                <li><a href="rovers.html">Rovers</a></li>
+                <li><a href="orbiters.html">Orbiters</a></li>
+                <li><a href="gallery.html" class="checked">Gallery</a></li>
+                <li><a href="sounds.html">Sounds</a></li>
+            </ul>
+        </div>
+        <div id="hamburger-button" class="hamburger">
+            <span class="hide-for-desktop"></span>
+            <span class="hide-for-desktop"></span>
+            <span class="hide-for-desktop"></span>
+        </div>
+    </header>
+
+    <section class="missions-head" id="start">
+        <h1>Gallery</h1>
+        <h3 class="date"></h3>
+        <p>On this page you will see photos made on Mars by Curiosity rover yesterday. This photos are from different cameras of rover, so you can admire Mars from differets perspectives. Don`t forget to check it often, cause they updete everyday!</p>
+    </section>
+
+    <section class="gallery-container" data-gallery-content>  
+    </section>
+	
+    <template data-galley-card-template>
+        <div class="gallery-card">
+            <img src="" alt="" data-img>
+            <div class="gallery-card-overlay">
+                <p data-camera-name></p>
+                <a href="" target="_blank" data-img-download download>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 18H5C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19C20 18.4477 19.5523 18 19 18Z" fill="#D9310B"/>
+                        <path d="M4 17V19C4 19.5523 4.44772 20 5 20C5.55228 20 6 19.5523 6 19V17C6 16.4477 5.55228 16 5 16C4.44772 16 4 16.4477 4 17Z" fill="#D9310B"/>
+                        <path d="M18 17V19C18 19.5523 18.4477 20 19 20C19.5523 20 20 19.5523 20 19V17C20 16.4477 19.5523 16 19 16C18.4477 16 18 16.4477 18 17Z" fill="#D9310B"/>
+                        <path d="M12 15C11.7926 15.0016 11.59 14.9387 11.42 14.82L7.41995 12C7.20436 11.8471 7.05809 11.615 7.01312 11.3545C6.96815 11.0941 7.02813 10.8264 7.17995 10.61C7.25574 10.5019 7.35219 10.4098 7.46376 10.3391C7.57532 10.2684 7.69977 10.2206 7.82994 10.1982C7.9601 10.1759 8.09339 10.1796 8.22212 10.2091C8.35085 10.2386 8.47247 10.2933 8.57995 10.37L12 12.76L15.4 10.2C15.6121 10.0409 15.8788 9.97255 16.1414 10.0101C16.4039 10.0476 16.6408 10.1878 16.7999 10.4C16.9591 10.6122 17.0274 10.8789 16.9899 11.1414C16.9524 11.404 16.8121 11.6409 16.6 11.8L12.6 14.8C12.4269 14.9298 12.2163 15 12 15V15Z" fill="#D9310B"/>
+                        <path d="M12 13C11.7348 13 11.4804 12.8946 11.2929 12.7071C11.1054 12.5196 11 12.2652 11 12V4C11 3.73478 11.1054 3.48043 11.2929 3.29289C11.4804 3.10536 11.7348 3 12 3C12.2652 3 12.5196 3.10536 12.7071 3.29289C12.8946 3.48043 13 3.73478 13 4V12C13 12.2652 12.8946 12.5196 12.7071 12.7071C12.5196 12.8946 12.2652 13 12 13Z" fill="#D9310B"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </template>
+
+
+
+    <footer>
+        <div class="logo">
+            <a href="/index.html"><img src="/img/logo_footer.svg" alt="" class="logo-img"></a>
+            <p>Made by Oleksandr Kostenko</p>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="missions.html">Missions</a></li>
+                <li><a href="">Moons</a></li>
+                <li><a href="">Rovers</a></li>
+                <li><a href="">Orbiters</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Sounds On Mars</a></li>
+                <li><a href="">Weather</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Bungee&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/home_filled.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="/dist/style.css">
+    <script defer src="/dist/script.js"></script>
+
+    <title>Mars Cube One</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="/img/logo_nav.svg" alt="" class="logo"></a>
+        <div class="nav">
+            <ul>
+                <li><a href="/index.html"><img src="/img/home_outline.svg" alt=""></a></li>
+                <li><a href="missions.html" >Missions</a></li>
+                <li><a href="moons.html">Moons</a></li>
+                <li><a href="rovers.html">Rovers</a></li>
+                <li><a href="orbiters.html"  class="checked">Orbiters</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="sounds.html">Sounds</a></li>
+            </ul>
+        </div>
+        <div id="hamburger-button" class="hamburger">
+            <span class="hide-for-desktop"></span>
+            <span class="hide-for-desktop"></span>
+            <span class="hide-for-desktop"></span>
+        </div>
+    </header>
+
+    <!--head section-->
+    <section class="head">
+        <div class="threejs"></div>
+            
+            <div class="content">
+                <h1><span>MarCO </span>Orbiter</h1>
+                <p>MarCO, short for Mars Cube One, was the first interplanetary mission to use a class of mini-spacecraft called CubeSats</p>
+                <div class="div-button"><a href="#start" class="button-large">explore</a></div>
+            </div>
+    </section>
+    <section class="rover_content" id="start">
+        <h2>Orbiter</h2>
+        <h3>Mission Overview </h3>
+        <p>The shape of 2001 Mars Odyssey is anything but uniform, but its size can most easily be visualized by mentally placing the spacecraft inside of a box. Pictured this way, the box would measure 2.2 meters (7.2 feet) long, 1.7 meters (5.6 feet) tall and 2.6 meters (8.5 feet) wide. At launch Odyssey weighed 725.0 kilograms (1598.4 pounds), including the 331.8-kilogram (731.5-pound) dry spacecraft with all of its subsystems, 348.7 kilograms (768.8 pounds) of fuel and 44.5 kilograms (98.1 pounds) of instruments.</p>
+        <p>The framework of the spacecraft is composed mostly of aluminum and some titanium. The use of titanium, a lighter and more expensive metal, is an efficient way of conserving mass while retaining strength. Odyssey's metal structure is similar to that used in the construction of high-performance and fighter aircraft.</p>
+        <p class="last">Most systems on the spacecraft are fully redundant. This means that, in the event of a device failure, there is a backup system to compensate. The main exception is a memory card that collects imaging data from the thermal emission imaging system.
+        </p>
+        <h3>Spacecraft Facts:</h3>
+        <table>
+            <tr>
+                <td>Size:</td>
+                <td class="value">When stowed for launch the MarCOs occupy six (CubeSat) units, or about the size of a briefcase. One CubeSat unit is a box roughly 4 inches (10 centimeters) square. The actual dimensions are 14.4 x 9.5 x 4.6 inches (36.6 x 24.3 x 11.8 centimeters) </td>
+            </tr>
+            <tr>
+                <td>Deep Space Communication:</td>
+                <td class="value">Flat-panel X-band antenna reflectarry that works like a parabolic dish</td>
+            </tr>
+            <tr>
+                <td>Deep Space Navigation:</td>
+                <td class="value">Iris, a new miniaturized X-band transponder compatible with the Deep Space Network, can transmit 8 kbps from Mars and also do radiometric navigation</td>
+            </tr>
+            <tr>
+                <td>Micro-Propulsion System:</td>
+                <td class="value">Compressed R236FA gas, commonly used in fire extinguishers and Eight thrusters for trajectory adjustments and to desaturate the reaction wheels</td>
+            </tr>
+            <tr>
+                <td>Attitude Control System:</td>
+                <td class="value"> A star tracker for fine orientation, Sun sensors for course orientation, Gyroscopes to sense rotation speed and Three-axis reaction wheels that adjust orientation</td>
+            </tr>
+        </table>
+        
+    </section>
+    <!--gallery section-->
+    <section class="gallery">
+        <div class="content blur">
+            <h2 class="text">gallery</h2>
+            <p class="p-text">Like this photo of the Mars? Then theck out other photos made by rovers. I`m shure you will like them</p>
+            <a href="/app/html/gallery.html">
+                <div class="button-unfilled-white">
+                    <p>LEARN MORE</p>
+                    <svg clarr="arrow-button" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8.5H17M10 1.5L17 8.5L10 15.5" stroke="#FDF9F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!--orbiters section-->
+    <section class="orbiters">
+        <h2>learn about other orbiters</h2>
+         <!--maven-->
+         <div class="card-text">
+            <div>
+                <h3>maven</h3>
+                <p>MAVEN's mission was designed for two years, but the spacecraft has enough fuel to operate through 2030.</p>
+                <a href="maven.html">
+                    <div class="button-unfilled-red">
+                        <p>LEARN MORE</p>
+                        <svg clarr="arrow-button" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8.5H17M10 1.5L17 8.5L10 15.5" stroke="#FDF9F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="image-wrap" style="background-image:url('/img/maven.jpg')"></div>
+        </div>
+        <!--mars odyssey-->
+        <div class="card-text">
+            <div class="image-wrap" style="background-image: url('/img/mars_odyssey.jpg');"></div>
+            <div>
+                <h3>mars odyssey</h3>
+                <p>NASA's Mars Odyssey holds the record for the longest continually active spacecraft in orbit around a planet other than Earth.</p>
+                <a href="/app/html/odyssey.html">
+                    <div class="button-unfilled-red">
+                        <p>LEARN MORE</p>
+                        <svg clarr="arrow-button" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8.5H17M10 1.5L17 8.5L10 15.5" stroke="#FDF9F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="logo">
+            <a href="/index.html"><img src="/img/logo_footer.svg" alt="" class="logo-img"></a>
+            <p>Made by Oleksandr Kostenko</p>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="/app/html/missions.html">Missions</a></li>
+                <li><a href="/app/html/moons.html">Moons</a></li>
+                <li><a href="/app/html/rovers.html">Rovers</a></li>
+                <li><a href="/app/html/orbiters.html">Orbiters</a></li>
+                <li><a href="/app/html/gallery.html">Gallery</a></li>
+                <li><a href="/app/html/gallery.html">Sounds On Mars</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/app/js/3d_js/three.js" ></script>
+    <script src="/app/js/3d_js/GLTFLoader.js" type="module"></script>
+    <script src="/app/js/3d_js/OrbitControls.js" ></script>
+    <script type="module">
+        import {GLTFLoader} from "/app/js/3d_js/GLTFLoader.js";
+
+        let container=document.querySelector(".threejs");
+
+        let scene=new THREE.Scene();
+        let aspect=container.clientWidth/container.clientHeight
+        let camera=new THREE.PerspectiveCamera(75, aspect, 0.01, 1000);
+
+        let renderer=new THREE.WebGLRenderer({antialian:true});
+        renderer.setSize(window.innerWidth/1.7, window.innerHeight);
+        container.appendChild(renderer.domElement);
+
+        let loader=new GLTFLoader();
+
+        let obj;
+        
+        loader.load('/3d/MarCO.glb', function(glb){
+            obj=glb.scene;
+            scene.add(glb.scene);
+            // obj.translateY(0.7);
+        });
+
+        // scene.background=new THREE.Color(0xffffff);
+        let light=new THREE.AmbientLight(0xffffff, 100);
+        scene.add(light);
+
+        let directlight1=new THREE.DirectionalLight( 0xffffff, 1 );
+        directlight1.position.set(10,5,100);
+        directlight1.castShadow=true;
+        scene.add(directlight1)
+        
+        directlight1=new THREE.DirectionalLight( 0x8C2D18, 1 );
+        directlight1.position.set(-10,5,100);
+        directlight1.castShadow=true;
+        scene.add(directlight1)
+        directlight1=new THREE.DirectionalLight( 0xdddddd, 1 );
+        directlight1.position.set(-10,5,100);
+        directlight1.castShadow=true;
+        scene.add(directlight1)
+
+        directlight1=new THREE.DirectionalLight( 0xffffff, 1 );
+        directlight1.position.set(10,-5,100);
+        directlight1.castShadow=true;
+        scene.add(directlight1)
+
+        directlight1=new THREE.DirectionalLight( 0xffffff, 1 );
+        directlight1.position.set(-10,-5,100);
+        directlight1.castShadow=true;
+        scene.add(directlight1)
+
+        let pointlight2=new THREE.PointLight( 0xffffff, 10 );
+        pointlight2.position.set(0,0,700);
+        scene.add(pointlight2)
+
+        pointlight2=new THREE.PointLight( 0xffffff, 10 );
+        pointlight2.position.set(0,0,-700);
+        scene.add(pointlight2)
+
+
+
+        camera.position.set(0, 0, 0.9);
+
+        let controls=new THREE.OrbitControls(camera, renderer.domElement);
+       
+
+        function animate(){
+            requestAnimationFrame(animate);
+            obj.rotation.y+=0.005;
+            renderer.render(scene, camera);
+            window.addEventListener("resize", onWindowResize());
+
+        }
+
+        function onWindowResize(){
+            camera.aspect=container.clientWidth/container.clientHeight;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(container.clientWidth, container.clientHeight);
+        }
+
+        animate();
+
+    </script>
+</body>
+</html>

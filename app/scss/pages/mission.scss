@@ -1,0 +1,158 @@
+@use '../util' as *;
+
+
+.mission-head{
+    margin: 0;
+    margin-left: 0;
+    margin-top: rem(80);
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+    @include breakpoint-up(xlarge){
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    height: rem(650);
+    background-image: url('/img/Perseverance_card_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    .content{
+        // margin-left: 7%;
+        max-width: 60%;
+        p{
+            max-width: 80%;
+        }
+        @include breakpoint-down(medium){
+            margin-right: 7%;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    } 
+}
+
+.mission-stats{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .stat{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: rem(300);
+        @include breakpoint-down(medium){
+            &:not(:last-child){
+                margin-bottom: rem(25);
+            }
+        }
+        @include breakpoint-down(small){
+            
+            max-width: 80%;
+            &:not(:last-child){
+                margin-bottom: rem(15);
+            }
+        }
+    }
+    @include breakpoint-down(medium){
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.facts{
+    display:flex;
+    flex-direction: row;
+    margin-left:0;
+    .img-wrap{
+        height: auto;
+        width:50%;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include breakpoint-down(medium){
+            z-index:-1;
+            opacity: 60%;
+            width:60%;
+        }
+    }
+    .facts-content{
+        margin-left: 10%;
+        @include breakpoint-down(medium){
+            width:60%;
+            margin-left: -20%;
+        }
+        p{
+            span{
+                color:$accent;
+                font-weight: 700;
+            }
+            
+        }
+    }
+    @include breakpoint-down(medium){
+        
+        
+        align-items:flex-end;
+        justify-content: center;
+    }
+}
+
+h2{
+    @include breakpoint-down(medium){
+        margin-bottom: rem(50);
+        text-align: center;
+    }
+    @include breakpoint-down(small){
+        margin-bottom: rem(25);
+    }
+}
+
+.program{
+    @include breakpoint-up(large){
+        width:50%;
+    }
+    
+    p{
+        &:not(:last-child){
+            margin-bottom: rem(29);
+        }
+    }
+    ul{
+        li{
+            font-family: $Barlow;
+            font-size: rem(18);
+            font-weight: 400;
+            color:$text;
+            line-height: rem(29);
+            margin: 0;
+            pointer-events: none;
+            @include breakpoint-down(medium){
+                font-size: rem(16);
+                line-height: rem(24);
+                
+                margin-bottom: rem(24);
+                
+            }
+            @include breakpoint-down(small){
+                font-size: rem(14);
+                line-height: rem(21);
+                
+                margin-bottom: rem(22);
+                
+            }
+            &:not(:last-child){
+                margin-bottom: rem(29);
+            }
+        }
+    }
+}
