@@ -15,7 +15,7 @@ const cardTemplate=document.querySelector('[data-galley-card-template]')
 
 const getCurrentDate=()=>{
     const date=new Date();
-    return `${date.getUTCFullYear()}-${date.getUTCMonth()+1}-${date.getUTCDate()-1}`
+    return `${date.getUTCFullYear()}-${date.getUTCMonth()+1}-${date.getUTCDate()-2}`
 };
 
 date_container.textContent=getCurrentDate();
